@@ -2,7 +2,8 @@
 const Employee = require('../lib/Employee.js');
 
 
-// gets id from getId() 
+// gets id from getId()  - https://www.pluralsight.com/guides/introduction-to-test-driven-development-in-javascript
+// https://youtu.be/y8TcPr73Bwo
 test('gets employee name', () => {
     const employee = new Employee('Derek', 30, 'Derek.kilgore@gmail.com');
 

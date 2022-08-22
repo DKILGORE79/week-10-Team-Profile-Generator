@@ -14,15 +14,10 @@ body {
 #navbar {
     background-color: var(--primary);
     color: var(--secondary);
-    font-size: 200px;
 }
+
 #navbar-text {
     font-size: 50px;
-}
-a
-
-.navbar-brand {
-    font-size: 100px;
 }
 
 

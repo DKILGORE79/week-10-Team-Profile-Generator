@@ -60,6 +60,7 @@ const generateIntern = function (intern) {
     `
 };
 
+
 // push array to page 
 createHTML = (data) => {
 
@@ -70,6 +71,7 @@ createHTML = (data) => {
         const employee = data[i];
         const role = employee.getRole(); 
 
+        
 
         // call manager function
         if (role === 'Manager') {

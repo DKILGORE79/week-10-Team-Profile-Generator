@@ -5,7 +5,7 @@ const createHTML = require("./src/createHTML.js");
 const Manager = require("./lib/Manager.js");
 const Engineer = require("./lib/Engineer.js");
 const Intern = require("./lib/Intern.js");
-const Title = require("./lib/Title.js");
+
 
 // node modules
 const fs = require("fs");
@@ -14,32 +14,6 @@ const inquirer = require("inquirer");
 // team array
 const teamArray = [];
 
-// start of Title prompt
-const addTitle = () => {
-  return inquirer
-    .prompt([
-      {
-        type: "input",
-        na: "name",
-        message: "Give your team a name or identifier",
-        validate: (titleInput) => {
-          if (titleInput) {
-            return true;
-          } else {
-            console.log("give your team a name or identifier");
-            return false;
-          }
-        },
-      },
-    ])
-    .then((titleInput) => {
-      const { teamName } = titleInput;
-      const titleName = new titleName(teamName);
-
-      teamArray.push(teamName);
-      console.log(teamName);
-    });
-};
 
 // start of manager prompts
 const addManager = () => {
@@ -236,8 +210,8 @@ const writeFile = (data) => {
   });
 };
 
-addTitle()
-  .then(addManager)
+
+addManager()
   .then(addEmployee)
   .then((teamArray) => {
     return createHTML(teamArray);

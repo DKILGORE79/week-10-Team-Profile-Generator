@@ -5,7 +5,7 @@ const generateManager = function (manager) {
         <div class="card h-100">
              <div class="card-header" id="card-title">
                 <h3>${manager.name}</h3>
-                <h4>Manager</h4><i class="material-icons">content_paste</i>
+                <h4>Manager</h4><i class="material-icons">manage_accounts</i>
             </div>
 
             <div class="card-body">
@@ -26,7 +26,7 @@ const generateEngineer = function (engineer) {
         <div class="card h-100">
              <div class="card-header" id="card-title">   
                 <h3>${engineer.name}</h3>
-                <h4>Engineer</h4><i class="material-icons">laptop_mac</i>
+                <h4>Engineer</h4><i class="material-icons">engineering</i>
             </div>
 
             <div class="card-body">
@@ -47,7 +47,7 @@ const generateIntern = function (intern) {
         <div class="card h-100">
             <div class="card-header" id="card-title">
                 <h3>${intern.name}</h3>
-                <h4>Intern</h4><i class="material-icons">assignment_ind</i>
+                <h4>Intern</h4><i class="material-icons">school</i>
             </div>
 
             <div class="card-body">
@@ -136,6 +136,7 @@ const makeTeamPage = function (employeeCards) {
       </body>
       <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
       <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
       </html>
 

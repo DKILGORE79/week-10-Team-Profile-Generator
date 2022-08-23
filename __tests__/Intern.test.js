@@ -8,14 +8,14 @@ test('creates an Intern object', () => {
     expect(intern.school) .toEqual(expect.any(String));
 });
 
-// gets school from getSchool()
+// gets school 
 test('gets employee school', () => {
     const intern = new Intern('Derek', 30, 'derek.kilgore@gmail.com', 'Avila University');
     
     expect(intern.getSchool()).toEqual(expect.stringContaining(intern.school.toString()));
 });
 
-// gets role from getRole()
+// gets role 
 test('gets role of employee', () => {
     const intern = new Intern('Derek', 30, 'derek.kilgore@gmail.com.com', 'Avila University');
 
